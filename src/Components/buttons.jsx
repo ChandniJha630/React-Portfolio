@@ -19,21 +19,21 @@ function Buttons() {
         role="button"
         onClick={() => openPopup('Software Developer')}
       >
-        1
+        01
       </button>
       <button
         className="button-67"
         role="button"
         onClick={() => openPopup('Data Scientist')}
       >
-        2
+        02
       </button>
       <button
         className="button-67"
         role="button"
         onClick={() => openPopup('Front End Developer')}
       >
-        3
+        03
       </button>
 
       {isPopupVisible && (
