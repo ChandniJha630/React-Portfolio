@@ -12,10 +12,18 @@
   z-index: -1;
 }
 .nav-text{
-  color:rgba(240, 248, 255, 0.212)
+  color:rgba(85, 171, 247, 0.285)
 }
-.butterfly{
-  cursor:url('assets/cursor.png'),auto;
+.bg-card{
+  background-color: rgba(128, 203, 243, 0.324);
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+}
+.bg-shadow{
+  box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+}
+
+.bg-about{
+  background-image: url('');
 }
 
 
