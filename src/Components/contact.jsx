@@ -1,31 +1,58 @@
 import React from 'react'
-import ContactBG from'../assets/Project.mp4';
+import ContactBG from'../assets/contactBG.mp4';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TerminalIcon from '@mui/icons-material/Terminal';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
+import BookIcon from '@mui/icons-material/Book';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
-    <div>
+    <>
          <video src={ContactBG} autoPlay loop muted className='bg-video' />
-         
-         <div className='text-xl text-white w-1/3 mt-32 absolute'>
+         <div className='flex w-full mt-32'>
+         <div className='text-xl text-white w-2/3  left-10 absolute button-red'>
          <form>
-      <div className='opacity-75 py-5 px-5'>
+      <div className='opacity-75 py-5 px-5 '>
         <label htmlFor="name" >Name:</label>
-        <input type="text" id="name" className=' bg-shadow rounded-lg mx-5 w-3/4 opacity-25 bg-white'required />
+        <input type="text" id="name" className=' rounded-lg mx-5 w-3/4 opacity-50 bg-black'required />
       </div>
       <div className='opacity-75 py-5 px-5'>
         <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required className=' bg-shadow rounded-lg w-3/4  mx-5 opacity-25 bg-white' />
+        <input type="email" id="email" required className=' rounded-lg w-3/4  mx-5 opacity-50 bg-black' />
       </div>
       <div className='opacity-75 py-5 px-5'>
         <label htmlFor="message">Pen:</label>
-        <textarea id="message" required className=' bg-shadow rounded-lg mr-5 ml-10 w-3/4 opacity-25 bg-white' />
+        <textarea id="message" required className=' rounded-lg mr-5 ml-10 w-3/4 opacity-50 bg-black' />
       </div>
-      <button type="submit" className=' bg-shadow rounded-lg py-2 px-2 my-5 mx-5 text-lg border-double border border-white hover:bg-white hover:text-blue-800'>Submit</button>
+      <button type="submit" className=' rounded-lg py-2 px-2 my-5 mx-5 text-lg border-double border border-black hover:bg-white hover:text-red-800'>Submit</button>
     </form>
-
-            </div>
+</div>
+<div className='block w-1/3 absolute right-10 py-'>
+  <div className="flex justify-around py-5">
+  <Link to='https://www.linkedin.com/in/chandni-jha-831987211/'><button className="button-red"><LinkedInIcon/></button></Link>
+  <Link to='https://github.com/ChandniJha630'><button className="button-red"><GitHubIcon/></button></Link>
+  <Link to='https://leetcode.com/ChandniJha/'><button className="button-red"><TerminalIcon/></button></Link>
+  </div>
+  <div className="flex justify-around py-5">
+  <Link to='https://medium.com/@chandnijha630'><button className="button-red"><NewspaperIcon/></button></Link>
+  <Link to='https://www.youtube.com/@QuantaBytes'><button className="button-red"><YouTubeIcon/></button></Link>
+  <Link to='https://www.youtube.com/@RhythmofThoughts'><button className="button-red"><SubscriptionsIcon/></button></Link>
+  </div>
+  <div className="flex justify-around py-5">
+  <Link to='https://www.amazon.in/s?k=chandni+jha+poetry&ref=nb_sb_noss'><button className="button-red"><BookIcon/></button></Link>
+  <Link to='https://www.instagram.com/chandnijha630/'><button className="button-red"><InstagramIcon/></button></Link>
+  <Link to='"https://twitter.com/i/flow/login?redirect_after_login=%2FChandni95600362'><button className="button-red"><TwitterIcon/></button></Link>
+  </div>
+</div>
 
     </div>
+    </>
   )
 }
 

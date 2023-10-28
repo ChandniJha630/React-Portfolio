@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import Image from '../assets/Image.jpg'
 const About = () => {
   return (
-   
-      <div className=''>
+      <>
          <video src={aboutbackground} autoPlay loop muted className='bg-video'/>
         <div className="w-full flex justify-around">
 
@@ -23,15 +22,18 @@ const About = () => {
               namely Quanta Bytes (Infotainment based) and Rhythm Of Thoughts (Poetry based). Cooking, handcraft, and sketching are my other hobbies.
     
             </p>
-            <button className="button-67 mx-5 my-16">
+            <Link to='https://docs.google.com/document/d/1c5TzF4NvEhcUvxpQpYrgbBounWAnz7Kr/edit?usp=sharing&ouid=101045511593766091252&rtpof=true&sd=true'><button className="button-67 mx-5 my-16">
                 View Resume
-              </button>
+              </button></Link>
               </div>
-              <div className='w-1/3 h-1/4 mt-5 justify-center  bg-slate-300 rotate-12'>
-              <img src={Image} alt="My Image" className='py-10  px-2'/>
+              <div className='w-1/3 h-1/4 mt-5 justify-center bg-slate-300 rotate-12'>
+              <img src={Image} alt="My Image" className='py-10  px-2 hover:animate-pulse '/>
               </div>
               </div>
-          </div> 
+              <div className="flex bottom-10">
+                
+              </div>
+          </> 
   );
 };
 
