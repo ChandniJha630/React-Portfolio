@@ -110,4 +110,16 @@
   background: #0000008b;
   box-shadow: -15px -15px 30px 0 #ff0000, 15px 15px 30px 0 #1d0dca17;
 }
+.bg-card {
+  transition: all 0.3s ease;
+}
+
+.bg-card:hover {
+  transform: scale(1.2);
+}
+.cr{
+  color:#ffffff75;
+  font-size: x-small;
+}
+
 

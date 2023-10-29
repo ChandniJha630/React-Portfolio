@@ -1,29 +1,88 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ProjectBG from '../assets/Project.mp4';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
 
 function Project() {
+  const intro1='Leveraging the power of Deep Neural Network Model was trained to give....'
+  const intro2='RNN LSTM Model was used on wheather parameters like wind speed, ....'
+  const intro3='Portfolio Website along with UI/UX designing was built using React .... '
+  const [text1, setText1] = useState(intro1);
+  const [text2, setText2] = useState(intro2);
+  const [text3, setText3] = useState(intro3);
+
+  const project1 = 'Leveraging the power of Deep Neural Network, Model was trained to give 100% accurate result. We used Force Plate sensor data recorded in Gait Gutenberg and Gait Rec Dataset to train our Model. Model was tested with Machine Learning Models as well but we found 100% accuracy with DNN. This was a DRDO project which was done as group project during graduation at IIIT KALYANI';
+  const project2 = 'RNN LSTM Model was used on wheather parameters like wind speed, temprature, humidity, pressure and its components. We choosed this problem statement from Smart India Hackathon and project was built for same purpose.';
+  const project3 = 'This website itself is my Portfolio Website along with UI/UX designing was built using React, Tailwind and Node Js. It is an responsive and one of most iteractive eyecatching website you ever landed on.';
+
+  const handleMouseEnter1 = () => {
+    setText1(project1);
+  };
+
+  const handleMouseLeave1 = () => {
+    setText1(intro1);
+  };
+
+  const handleMouseEnter2 = () => {
+    setText2(project2);
+  };
+
+  const handleMouseLeave2 = () => {
+    setText2(intro2);
+  };
+
+  const handleMouseEnter3 = () => {
+    setText3(project3);
+  };
+
+  const handleMouseLeave3 = () => {
+    setText3(intro3);
+  };
+
   return (
     <div>
-      <video src={ProjectBG} autoPlay loop muted className='bg-video' />
-     <div className="flex justify-around  absolute bottom-5 content-end">
-        <div className="w-1/4 py-10 px-10 bg-card ">
-            <h1 className='text-lg font-semibold'>Early Detection Of Gait Abnormality</h1>
-            <p className='text-md'> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem perferendis assumenda magni delectus dignissimos fuga illum numquam corporis aliquid unde? </p>
-        <Link><button className='w-full'><GitHubIcon/></button></Link>
+      <video src={ProjectBG} autoPlay loop muted className="bg-video" />
+      <div className="flex justify-around absolute bottom-10 content-end">
+        <div
+          className="w-1/4 py-10 px-10 bg-card"
+          onMouseEnter={handleMouseEnter1}
+          onMouseLeave={handleMouseLeave1}
+        >
+          <h1 className="text-lg font-semibold">Early Detection Of Gait Abnormality</h1>
+          <p className="text-md">{text1}</p>
+          <Link to='https://github.com/ChandniJha630/Early-Detection-Of-Gait-Abnormality'>
+            <button className="w-full">
+              <GitHubIcon />
+            </button>
+          </Link>
         </div>
-        <div className="w-1/4 py-10 px-10 bg-card ">
-            <h1 className='text-lg font-semibold'>CloudBurst Prediction System</h1>
-            <p className='text-md'> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem perferendis assumenda magni delectus dignissimos fuga illum numquam corporis aliquid unde? </p>
-            <Link><button className='w-full'><GitHubIcon/></button></Link>
+        <div
+          className="w-1/4 py-10 px-10 bg-card"
+          onMouseEnter={handleMouseEnter2}
+          onMouseLeave={handleMouseLeave2}
+        >
+          <h1 className="text-lg font-semibold">CloudBurst Prediction System</h1>
+          <p className="text-md">{text2}</p>
+          <Link to='https://github.com/ChandniJha630/Cloud-Burst-Prediction'>
+            <button className="w-full">
+              <GitHubIcon />
+            </button>
+          </Link>
         </div>
-        <div className="w-1/4 py-10 px-10 bg-card ">
-            <h1 className='text-lg font-semibold'>Portfolio Project In React</h1>
-            <p className='text-md'> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem perferendis assumenda magni delectus dignissimos fuga illum numquam corporis aliquid unde? </p>
-            <Link><button className='w-full'><GitHubIcon/></button></Link>
+        <div
+          className="w-1/4 py-10 px-10 bg-card"
+          onMouseEnter={handleMouseEnter3}
+          onMouseLeave={handleMouseLeave3}
+        >
+          <h1 className="text-lg font-semibold">Portfolio Project In React</h1>
+          <p className="text-md">{text3}</p>
+          <Link to='https://github.com/ChandniJha630/React-Portfolio'>
+            <button className="w-full mt-2">
+              <GitHubIcon />
+            </button>
+          </Link>
         </div>
-     </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useRef } from 'react';
 import ContactBG from'../assets/contactBG.mp4';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -10,27 +10,42 @@ import BookIcon from '@mui/icons-material/Book';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+  const form = useRef(); 
+  const [submit, setSubmitStatus]=useState('Submit')
+  const sendEmail=(e)=>{
+    setSubmitStatus('Submitted')
+    e.preventDefault();
+    emailjs.sendForm('service_r2u66xk','template_uiec3cc',form.current, 'yGYJvPL77Lln5JEG9')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+
+
+  }
   return (
     <>
          <video src={ContactBG} autoPlay loop muted className='bg-video' />
          <div className='flex w-full mt-32'>
          <div className='text-xl text-white w-2/3  left-10 absolute button-red'>
-         <form>
+         <form ref={form} onSubmit={sendEmail}>
       <div className='opacity-75 py-5 px-5 '>
-        <label htmlFor="name" >Name:</label>
-        <input type="text" id="name" className=' rounded-lg mx-5 w-3/4 opacity-50 bg-black'required />
+        <label htmlFor="name" className='text-lg font-sans' >Name:</label>
+        <input type="text" name="name" id="name" className=' rounded-lg mx-5 w-3/4 opacity-50 bg-black'required />
       </div>
       <div className='opacity-75 py-5 px-5'>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required className=' rounded-lg w-3/4  mx-5 opacity-50 bg-black' />
+        <label htmlFor="email" className='text-lg font-sans'>Email:</label>
+        <input type="email" name="email" id="email" required className=' rounded-lg w-3/4  mx-5 opacity-50 bg-black' />
       </div>
       <div className='opacity-75 py-5 px-5'>
-        <label htmlFor="message">Pen:</label>
-        <textarea id="message" required className=' rounded-lg mr-5 ml-10 w-3/4 opacity-50 bg-black' />
+        <label htmlFor="message" className='text-lg font-sans'>Pen:</label>
+        <textarea id="message" name="message" required className=' rounded-lg mr-5 ml-10 w-3/4 opacity-50 bg-black' />
       </div>
-      <button type="submit" className=' rounded-lg py-2 px-2 my-5 mx-5 text-lg border-double border border-black hover:bg-white hover:text-red-800'>Submit</button>
+      <button type="submit" value="Send" className='font-sans rounded-lg py-2 px-2 my-5 mx-5 text-lg border-double border border-black hover:bg-white hover:text-red-800'>{submit}</button>
     </form>
 </div>
 <div className='block w-1/3 absolute right-10 py-'>

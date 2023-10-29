@@ -18,11 +18,12 @@ const About = () => {
               <br />
               <br />
               My vision is to bring life to innovative and creative ideas. I have diverse interests; I write poems{' '}
-              <Link href="https://www.amazon.in/Rekhanjali-Chandni-Jha/dp/B0B8264DNW/ref=sr_1_14?keywords=chandni+jha+poetry&qid=1688485326&sr=8-14">Rekhanjali </Link> is my solo book with 30 poems and mandala arts based on 30 different themes. You can view my creative contents on my YouTube channels
+              <Link to="https://www.amazon.in/Rekhanjali-Chandni-Jha/dp/B0B8264DNW/ref=sr_1_14?keywords=chandni+jha+poetry&qid=1688485326&sr=8-14">Rekhanjali </Link> is my solo book with 30 poems and mandala arts based on 30 different themes. You can view my creative contents on my YouTube channels
               namely Quanta Bytes (Infotainment based) and Rhythm Of Thoughts (Poetry based). Cooking, handcraft, and sketching are my other hobbies.
     
             </p>
-            <Link to='https://docs.google.com/document/d/1c5TzF4NvEhcUvxpQpYrgbBounWAnz7Kr/edit?usp=sharing&ouid=101045511593766091252&rtpof=true&sd=true'><button className="button-67 mx-5 my-16">
+            <Link to='https://docs.google.com/document/d/1c5TzF4NvEhcUvxpQpYrgbBounWAnz7Kr/edit?usp=sharing&ouid=101045511593766091252&rtpof=true&sd=true'>
+              <button className="button-67 mx-5 my-10">
                 View Resume
               </button></Link>
               </div>
