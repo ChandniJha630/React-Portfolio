@@ -1,8 +1,57 @@
-# React + Vite
+## React Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This website itself is my Portfolio Website along with UI/UX designing was built using React, Tailwind and Node Js. 
+It is an responsive and one of most iteractive eyecatching website you ever landed on.
+# Deployed  Link : https://react-portfolio-9z8v7ogho-chandnijha630.vercel.app/project
 
-Currently, two official plugins are available:
+# File Structure
+src/
+  ├── assets/
+  │     ├── aboutBackground.jpg
+  │     ├── contactBG.jpg
+  │     ├── dp.jpg
+  │     ├── IntroBackground.jpg
+  │     ├── ProjectBG.jpg
+  │
+  ├── components/
+  │     ├── About.jsx
+  │     ├── Background.jsx
+  │     ├── Button.jsx
+  │     ├── Contact.jsx
+  │     ├── Copyright.jsx
+  │     ├── Logo.jsx
+  │     ├── Navbar.jsx
+  │     ├── Project.jsx
+  │
+  ├── index.css
+  ├── main.jsx
+  ├── layout.jsx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Test Yourself
+
+# Prerequisites
+Before you begin, ensure you have the following prerequisites installed:
+Node.js
+npm or Yarn
+
+# Required Node Modules
+Tailwind -- used for styling
+Material UI -- used in font styling
+EmailJS -- used for email service in contact section
+
+# Command Lines
+Installation : npm i  xyz
+Run : npm run dev / npm start
+deploy: npm run build
+
+# Copyrights
+Video copyright - Pixabay
+UI/UX- Chandni Jha (Myself)
+
+# License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+
+
