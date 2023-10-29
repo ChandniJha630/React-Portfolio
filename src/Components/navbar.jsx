@@ -22,7 +22,7 @@ function Navbar() {
       <nav>
         <ul className='flex nav-text text-xl lg:text-sm justify-end gap-12 justify-items-center md:block md:fixed md:right-0 md:top-0'>
         <li className='invisible md:visible md:pt-2 md:pr-2' onClick={toggleClasses}><MenuIcon/></li>
-          <li className=" hover:text-white hover:shadow-xl hover:backdrop-brightness-200 pl-5 pr-0 pt-5 pb-5 hambur">
+          <li className=" hover:text-white hover:shadow-xl hover:backdrop-brightness-200 pl-5 pr-5 pt-5 pb-5 hambur">
             <NavLink
               to="/" className={({isActive}) =>` ${isActive ? "text-white" : "nav-text"}`}>
               Home
