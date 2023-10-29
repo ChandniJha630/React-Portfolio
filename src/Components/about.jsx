@@ -1,7 +1,7 @@
 import React from 'react';
 import aboutbackground from '../assets/aboutbackground.mp4'
 import { Link } from 'react-router-dom';
-import Image from '../assets/Image.jpg'
+import DP from '../assets/dp.jpg'
 const About = () => {
   return (
       <>
@@ -28,7 +28,7 @@ const About = () => {
               </button></Link>
               </div>
               <div className='w-1/3 h-1/4 mt-5 justify-center bg-slate-300 rotate-12 lg:invisible'>
-              <img src={Image} alt="My Image" className='py-10  px-2 hover:animate-pulse lg:py-2 lg:px-2'/>
+              <img src={DP} alt="My Image" className='py-10  px-2 hover:animate-pulse lg:py-2 lg:px-2'/>
               </div>
               </div>
               <div className="flex bottom-10">
