@@ -30,25 +30,25 @@ function Contact() {
   return (
     <>
          <video src={ContactBG} autoPlay loop muted className='bg-video' />
-         <div className='flex w-full mt-32'>
-         <div className='text-xl text-white w-2/3  left-10 absolute button-red'>
+         <div className='flex w-full mt-32 lg:block md:mt-16'>
+         <div className='text-xl text-white w-2/3  left-10 absolute button-red md:left-0 md:w-2/3 md:mx-10 md:text-sm'>
          <form ref={form} onSubmit={sendEmail}>
-      <div className='opacity-75 py-5 px-5 '>
+      <div className='opacity-75 py-5 px-5 md:px-2 md:py-2 '>
         <label htmlFor="name" className='text-lg font-sans' >Name:</label>
         <input type="text" name="name" id="name" className=' rounded-lg mx-5 w-3/4 opacity-50 bg-black'required />
       </div>
-      <div className='opacity-75 py-5 px-5'>
+      <div className='opacity-75 py-5 px-5 md:px-2 md:py-2'>
         <label htmlFor="email" className='text-lg font-sans'>Email:</label>
         <input type="email" name="email" id="email" required className=' rounded-lg w-3/4  mx-5 opacity-50 bg-black' />
       </div>
-      <div className='opacity-75 py-5 px-5'>
+      <div className='opacity-75 py-5 px-5 md:px-2 md:py-2'>
         <label htmlFor="message" className='text-lg font-sans'>Pen:</label>
         <textarea id="message" name="message" required className=' rounded-lg mr-5 ml-10 w-3/4 opacity-50 bg-black' />
       </div>
       <button type="submit" value="Send" className='font-sans rounded-lg py-2 px-2 my-5 mx-5 text-lg border-double border border-black hover:bg-white hover:text-red-800'>{submit}</button>
     </form>
 </div>
-<div className='block w-1/3 absolute right-10 py-'>
+<div className='block w-1/3 absolute right-10 md:left-0 md:w-2/3 md:mx-10'>
   <div className="flex justify-around py-5">
   <Link to='https://www.linkedin.com/in/chandni-jha-831987211/'><button className="button-red"><LinkedInIcon/></button></Link>
   <Link to='https://github.com/ChandniJha630'><button className="button-red"><GitHubIcon/></button></Link>

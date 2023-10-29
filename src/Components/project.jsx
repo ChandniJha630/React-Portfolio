@@ -42,9 +42,9 @@ function Project() {
   return (
     <div>
       <video src={ProjectBG} autoPlay loop muted className="bg-video" />
-      <div className="flex justify-around absolute bottom-10 content-end">
+      <div className="flex justify-around absolute bottom-10 md:bottom-0 md:absolute content-end md:block md:px-10 md:w-full">
         <div
-          className="w-1/4 py-10 px-10 bg-card"
+          className="w-1/4 py-10 px-10 bg-card md:w-full md:py-2 md:px-2 md:my-10 md:justify-center "
           onMouseEnter={handleMouseEnter1}
           onMouseLeave={handleMouseLeave1}
         >
@@ -57,7 +57,7 @@ function Project() {
           </Link>
         </div>
         <div
-          className="w-1/4 py-10 px-10 bg-card"
+          className="w-1/4 py-10 px-10 bg-card md:w-full md:py-2 md:px-2 md:my-10 md:justify-center"
           onMouseEnter={handleMouseEnter2}
           onMouseLeave={handleMouseLeave2}
         >
@@ -70,7 +70,7 @@ function Project() {
           </Link>
         </div>
         <div
-          className="w-1/4 py-10 px-10 bg-card"
+          className="w-1/4 py-10 px-10 bg-card md:w-full md:py-2 md:px-2 md:my-10 md:justify-center"
           onMouseEnter={handleMouseEnter3}
           onMouseLeave={handleMouseLeave3}
         >
