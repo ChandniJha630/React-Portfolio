@@ -84,7 +84,7 @@ function Project() {
           </Link>
         </div>
       </div> */}
-      <div className="carousel w-3/4 absolute bottom-5">
+      <div className="carousel w-full absolute bottom-5 ">
   <div id="slide1" className="carousel-item relative w-full">
   <div className='py-20'>
       <a href="#slide5" className="btn btn-circle">❮</a>   
