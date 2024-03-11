@@ -17,8 +17,8 @@ function Project() {
       title: 'OTT Platform ',
       subtitle:'Front-End React Project',
       description: 'Movies database application made with top notch frontend technologies such as React, Redux & SCSS. In this project core concepts of react js such as jsx, components, props, state,  lifecycle of components, conditional rendering, lists, keys & Redux were used.',
-      githubLink: 'https://github.com/ChandniJha630/disney-clone', // Add your GitHub link here
-      deployedLink:''
+      githubLink: 'https://github.com/ChandniJha630/Moviex', // Add your GitHub link here
+      deployedLink:'moviex-nine.vercel.app'
     },
     {
       title: 'Early Detection Of Gait Abnormality',
