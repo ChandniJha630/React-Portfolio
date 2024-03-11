@@ -14,14 +14,14 @@ function Project() {
       deployedLink: 'https://insights-d9jkwf6sn-chandnijha630.vercel.app/'
     },
     {
-      title: 'OTT Platform ',
+      title: 'Online OTT Platform ',
       subtitle:'Front-End React Project',
       description: 'Movies database application made with top notch frontend technologies such as React, Redux & SCSS. In this project core concepts of react js such as jsx, components, props, state,  lifecycle of components, conditional rendering, lists, keys & Redux were used.',
       githubLink: 'https://github.com/ChandniJha630/Moviex', // Add your GitHub link here
-      deployedLink:'moviex-nine.vercel.app'
+      deployedLink:'https://moviex-nine.vercel.app/'
     },
     {
-      title: 'Early Detection Of Gait Abnormality',
+      title: 'Early Detection Of Gait Abnormality with Machine Learning and Sensor',
       subtitle:'Machine Learning Project',
       description: 'Leveraging the power of Deep Neural Network, Model was trained to give 100% accurate result. We used Force Plate sensor data recorded in Gait Gutenberg and Gait Rec Dataset to train our Model. Model was tested with Machine Learning Models as well but we found 100% accuracy with DNN. This was a DRDO project which was done as group project during graduation at IIIT KALYANI. Technology Used: Machine Learning, Deep Learning, Feature Engineering',
       githubLink: 'https://github.com/ChandniJha630/Early-Detection-Of-Gait-Abnormality',
