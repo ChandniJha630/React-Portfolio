@@ -11,7 +11,7 @@ function Project() {
       subtitle:'Front-End React Project',
       description: 'Functionalities: Sign Up , Login , CRUD (Create, Read, Update, Delete) posts, View Your Profile , explore everyones posts and Logout functionalities.\n TechStack: React, Redux, Tailwind, TinyMCE, Appwrite for Backend',
       githubLink: 'https://github.com/ChandniJha630/Insights', // Add your GitHub link here
-      deployedLink: 'insights-sage-six.vercel.app'
+      deployedLink: 'https://insights-d9jkwf6sn-chandnijha630.vercel.app/'
     },
     {
       title: 'OTT Platform ',
