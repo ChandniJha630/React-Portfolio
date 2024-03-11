@@ -22,7 +22,7 @@ const About = () => {
                book based on "Saino Poetry" - 100 Sainos. 
     
             </p>
-            <Link to='https://www.overleaf.com/project/65c490cd5ae83f8a929b1547'>
+            <Link to='https://drive.google.com/file/d/1cVcS28n4byHntjU7t3nMUtm3IkxxTqf5/view?usp=sharing'>
               <button className="button-67 mx-5 my-10 ">
                 View Resume
               </button></Link>
