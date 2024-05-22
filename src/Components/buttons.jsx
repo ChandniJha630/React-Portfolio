@@ -17,23 +17,30 @@ function Buttons() {
       <button
         className="button-67"
         role="button"
-        onClick={() => openPopup('Software Developer')}
+        onClick={() => openPopup('Software Development')}
       >
         01
       </button>
       <button
         className="button-67"
         role="button"
-        onClick={() => openPopup('Data Scientist')}
+        onClick={() => openPopup('Machine Learning')}
       >
         02
       </button>
       <button
         className="button-67"
         role="button"
-        onClick={() => openPopup('Front End Developer')}
+        onClick={() => openPopup('Full Stack Development - MERN')}
       >
         03
+      </button>
+      <button
+        className="button-67"
+        role="button"
+        onClick={() => openPopup('UI-UX Designing')}
+      >
+        04
       </button>
 
       {isPopupVisible && (
