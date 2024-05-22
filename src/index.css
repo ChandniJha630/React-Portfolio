@@ -76,7 +76,7 @@
 }
 
 .animate-ping-3s {
-  animation: ping-3s 3s linear infinite;
+  animation: ping-3s 5s linear infinite;
 }
 .button-red {
   height:fit-content;
