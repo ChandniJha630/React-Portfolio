@@ -44,7 +44,7 @@ function Buttons() {
       </button>
 
       {isPopupVisible && (
-        <div className=" animate-ping-3s top-16 left-20 absolute pl-5 pr-5 pt-5 pb-5">
+        <div className=" animate-ping-3s top-0 left-0 absolute pl-5 pr-5 pt-5 pb-5">
           <h1 className='text-xl'>{popupContent}</h1>
         </div>
       )}
