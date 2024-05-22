@@ -13,7 +13,7 @@ function Buttons() {
   };
 
   return (
-    <div className="flex justify-between absolute text-white text-xs h-1/3 items-end pl-2 pr-2 pt-5 pb-5 w-1/5 bottom-32 right-96 lg:w-2/3 lg:right-5 lg:justify-around">
+    <div className="flex justify-between absolute text-white text-xs h-1/3 items-end pl-2 pr-2 pt-5 pb-5 w-1/5 bottom-16 right-48 lg:w-2/3 lg:right-5 lg:justify-around">
       <button
         className="button-67"
         role="button"
